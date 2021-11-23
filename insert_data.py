@@ -70,3 +70,4 @@ def insert_data():
     return
 
 engine, connection, metadata = database_create()
+insert_data()

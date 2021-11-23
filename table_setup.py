@@ -1,4 +1,8 @@
+from pprint import pprint
+
 import sqlalchemy
+
+from table_creation import create_table
 
 def table_column_datatype():
     """get title for table and columns; get datatype for columns"""
@@ -72,3 +76,6 @@ datatype_dict = {
     3: sqlalchemy.Float(),
     4: sqlalchemy.Boolean()
 }
+
+table_data_dict = table_column_datatype()
+create_table(table_data_dict)

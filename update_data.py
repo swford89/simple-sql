@@ -67,3 +67,4 @@ def update_data():
     return
 
 engine, connection, metadata = database_create()
+update_data()
